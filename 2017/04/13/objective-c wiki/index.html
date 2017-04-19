@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="JohnXiang’s Blog">
 <meta property="og:description" content="objective-c维基百科学习笔记 好吧，上面只是简单的实验一下插入图片的效果。插入图片之前在控制器中输入了如下代码： 12cd /xianghui/hexo/blogsudo npm https://github.com/CodeFalling/hexo-asset-image --save 目的是为了实现在使用macdown写文章的时候可以插入图片。    消息传递在objective-c">
 <meta property="og:image" content="http://pic.baike.soso.com/p/20140619/20140619093545-1024299955.jpg">
-<meta property="og:updated_time" content="2017-04-19T02:42:40.000Z">
+<meta property="og:updated_time" content="2017-04-19T02:45:50.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="objective-c维基百科笔记">
 <meta name="twitter:description" content="objective-c维基百科学习笔记 好吧，上面只是简单的实验一下插入图片的效果。插入图片之前在控制器中输入了如下代码： 12cd /xianghui/hexo/blogsudo npm https://github.com/CodeFalling/hexo-asset-image --save 目的是为了实现在使用macdown写文章的时候可以插入图片。    消息传递在objective-c">
@@ -582,6 +582,7 @@
 <li>可以将消息发给对象集合而不需要一一检查每个对象的类型，具备消息转送的机制  </li>
 <li>空对象nil接受消息之后默认为不做事</li>
 </ul>
+<a id="more"></a>
 <h2 id="类的定义与实现"><a href="#类的定义与实现" class="headerlink" title="类的定义与实现"></a>类的定义与实现</h2><p>Objective-c中强制将类的定义（interface）和类的实现（implemention）分为两个部分。<br>类的定义通常一<strong>.h</strong>结尾，而类的实现通常一<strong>.m</strong>结尾（和c的一样）。</p>
 <h3 id="interface"><a href="#interface" class="headerlink" title="interface"></a>interface</h3><p>清楚的定义了类的名称，类的方法，类的数据成员。以关键字@interface开始，@end结束</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">@interface MyObject : NSObject &#123;</div><div class="line">    int memberVar1; // 实体变量</div><div class="line">    id  memberVar2;</div><div class="line">&#125;</div><div class="line"></div><div class="line">+(return_type) class_method; // 类方法</div><div class="line"></div><div class="line">-(return_type) instance_method1; // 实例方法</div><div class="line">-(return_type) instance_method2: (int) p1;</div><div class="line">-(return_type) instance_method3: (int) p1 andPar: (int) p2;</div><div class="line">@end</div></pre></td></tr></table></figure>
